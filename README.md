@@ -6,36 +6,37 @@
 
 ## Caso de uso
 ---------------
-Caso de Uso: Apertura y Visualización de Documentos PDF desde la Aplicación Móvil
+**Caso de Uso: Apertura y Visualización de Documentos PDF desde la Aplicación Móvil**
 
-Descripción:
-En el contexto de la aplicación a desarrollar, se trata de visualizar los documentos subidos a una plataforma educativa, donde el usuario podra abrir documentos de tipo PDF, tanto estudiantes como profesores, a menudo necesitan acceder y revisar documentos en formato PDF, como notas de clase, asignaciones, material de lectura y documentos de referencia.
+*Descripción:* En el contexto de la aplicación a desarrollar, se trata de visualizar los documentos subidos a una plataforma educativa, donde tanto estudiantes como profesores podrán abrir documentos en formato PDF, como notas de clase, asignaciones, material de lectura y documentos de referencia.
 
-Flujo del Caso de Uso:
-Para el flujo se especifican las siguientes interaccines que tendra el usuario con el sistema
+*Flujo del Caso de Uso:*
 
-Inicio de Sesión:
-El usuario inicia sesión en la aplicación educativa.
-Selección de Materia o Curso:
+1. **Inicio de Sesión:**
+   - El usuario inicia sesión en la aplicación educativa.
 
-Selección de Documento:
+2. **Selección de Materia o Curso:**
+   - El usuario elige la materia o curso relevante para acceder a los documentos asociados.
 
-El usuario elige un documento en formato PDF que desea revisar.
-Apertura y Visualización del PDF:
+3. **Selección de Documento:**
+   - El usuario selecciona un documento en formato PDF que desea revisar.
 
-La aplicación abre el visor de PDF incorporado, permitiendo al usuario visualizar el contenido del documento directamente dentro de la aplicación.
-Navegación y Exploración:
-El usuario puede navegar por las páginas del PDF, hacer zoom para leer detalles y utilizar herramientas de búsqueda de texto para encontrar 
-información específica.
+4. **Apertura y Visualización del PDF:**
+   - La aplicación abre el visor de PDF incorporado, permitiendo al usuario visualizar el contenido del documento directamente dentro de la aplicación.
 
-Beneficios:
+5. **Navegación y Exploración:**
+   - El usuario puede navegar por las páginas del PDF, hacer zoom para leer detalles y utilizar herramientas de búsqueda de texto para encontrar información específica.
 
-Acceso Rápido a Recursos Educativos: Los estudiantes y profesores pueden acceder de manera rápida y conveniente a los materiales educativos relevantes directamente desde la aplicación móvil.
+*Beneficios:*
 
-Facilita el Estudio y la Preparación: Los usuarios pueden revisar notas de clase, asignaciones y otros documentos importantes en cualquier momento y lugar, lo que facilita la preparación para exámenes y clases.
+- **Acceso Rápido a Recursos Educativos:** 
+  - Los estudiantes y profesores pueden acceder de manera rápida y conveniente a los materiales educativos relevantes directamente desde la aplicación móvil.
 
-Reducción del Uso de Papel: Al proporcionar documentos en formato digital, la aplicación contribuye a la reducción del uso de papel, siendo respetuosa con el medio ambiente.
+- **Facilita el Estudio y la Preparación:** 
+  - Los usuarios pueden revisar notas de clase, asignaciones y otros documentos importantes en cualquier momento y lugar, lo que facilita la preparación para exámenes y clases.
 
+- **Reducción del Uso de Papel:** 
+  - Al proporcionar documentos en formato digital, la aplicación contribuye a la reducción del uso de papel, siendo respetuosa con el medio ambiente.
 
 ## Diseño
 ---------------

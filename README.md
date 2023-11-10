@@ -34,7 +34,7 @@ visor_pdf/
 ```
 
 - **`lib/screens/`:** Contiene las pantallas principales de la aplicación.
-- **`lib/widgets/`:** Contiene widgets reutilizables en varias pantallas.
+- **`lib/widgets/`:** Contiene widgets reutilizables en las pantallas.
 - **`assets/`:** Contiene archivos estáticos como imágenes.
 
 ### Arquitectura de Software Utilizada:

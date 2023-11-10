@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:visor_pdf/screens/home_screen.dart';
 
 class NewScreen extends StatelessWidget {
   final String? pdfPath; // Ruta del PDF que recibimos
@@ -23,19 +22,19 @@ class NewScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          // Usamos el PDFView con la ruta del PDF que recibimos
-          PDFView(
-            filePath: pdfPath, // Usamos la ruta del PDF recibida
-            fitPolicy: FitPolicy.WIDTH, // Controla la política de ajuste
-          ),
-          ElevatedButton(
-            onPressed: () {
-              // Agrega la lógica para hacer zoom en el PDF aquí
-              // Puedes utilizar métodos de PDFView para interactuar con el PDF.
-            },
-            child: Text('Hacer Zoom al PDF'),
-            style: ElevatedButton.styleFrom(
-              primary: Colors.redAccent, // Cambia el color del botón
+          Expanded(
+            // Usamos el PDFView con la ruta del PDF que recibimos
+            child: PDFView(
+              filePath: pdfPath, // Usamos la ruta del PDF recibida
+              fitPolicy: FitPolicy.WIDTH, // Controla la política de ajuste
+              onError: (error) {
+                // Maneja errores de carga del PDF
+                print("Error al cargar el PDF: $error");
+              },
+              onRender: (pages) {
+                // Se llama cuando el PDF se ha renderizado correctamente
+                print("PDF renderizado con $pages páginas.");
+              },
             ),
           ),
         ],

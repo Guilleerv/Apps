@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:visor_pdf/screens/visor_pdf.dart';
+import 'package:visor_pdf/screens/home_screen.dart';
+import 'package:visor_pdf/screens/new_screen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PDFViewerScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.light(
+          primary: Colors.white,
+          secondary: Colors.redAccent.shade200,
+          background: Colors.grey.shade50,
+        ),
+      ),
+      home: HomeScreen(),
     );
   }
 }

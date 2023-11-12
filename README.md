@@ -1,8 +1,8 @@
 # PDF_VIEW
 ## EQUIPO
-1. Guillermo Ramos encargado de 
-2. Richard Vásquez encargado de
-3. Marcelo Lillo encargado de
+1. Guillermo Ramos Arquitecto de Software
+2. Richard Vásquez Desarrollador Principal
+3. Marcelo Lillo Encargado de Diseño
 
 ## Caso de uso
 ---------------
@@ -53,6 +53,8 @@ La estructura de archivos para el proyecto PDF VIEW se organiza de la siguiente 
 visor_pdf/
 |-- lib/
 |   |-- main.dart
+|   |-- services/
+|   |   |-- pdf_service.dart
 |   |-- screens/
 |   |   |-- home_screen.dart
 |   |   |-- new_screen.dart
@@ -66,6 +68,7 @@ visor_pdf/
 
 - **`lib/screens/`:** Contiene las pantallas principales de la aplicación.
 - **`lib/widgets/`:** Contiene widgets reutilizables en las pantallas.
+- **`lib/services/`:** Contiene servicios especificos relacionados con la manipulación de los archivos PDF.
 - **`assets/`:** Contiene archivos estáticos como imágenes.
 
 ### Arquitectura de Software Utilizada:
@@ -82,6 +85,10 @@ La arquitectura de software utilizada sigue una estructura de capas más simple:
    - **Ubicación:** En la carpeta `lib/widgets/`.
    - **Propósito:** Contiene widgets reutilizables en varias pantallas.
 
+3. **Capa de Servicios: **
+   - **Ubicación:** En la carpeta `lib/services/`.
+   -**Propósito:** Contiene servicioes específicos, como `pdf_service.dart`, que maneja la lógica de manipulación de archivos PDF.
+
 ### Diagrama de Capas:
 
 ```plaintext
@@ -91,6 +98,10 @@ La arquitectura de software utilizada sigue una estructura de capas más simple:
                 |
   +--------------------------+
   |  Widgets Reutilizables   |
+  +--------------------------+
+                |
+  +--------------------------+
+  |    Capa de Servicios     |
   +--------------------------+
 ```
 

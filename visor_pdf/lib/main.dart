@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:visor_pdf/screens/home_screen.dart';
-import 'package:visor_pdf/screens/new_screen.dart';
 
 void main() {
   runApp(MyApp());

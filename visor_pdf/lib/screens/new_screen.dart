@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'package:visor_pdf/widgets/pdf_button.dart'; // Importa el nuevo widget
 
 class NewScreen extends StatelessWidget {
-  final String? pdfPath; // Ruta del PDF que recibimos
+  final String? pdfPath;
 
   NewScreen({required this.pdfPath});
 
@@ -13,7 +14,7 @@ class NewScreen extends StatelessWidget {
         backgroundColor: Colors.redAccent.shade200,
         iconTheme: IconThemeData(color: Colors.white),
         title: Text(
-          'Nueva Pantalla',
+          'Pantalla De Visualización',
           style: TextStyle(
             color: Colors.white,
           ),
@@ -23,19 +24,20 @@ class NewScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Expanded(
-            // Usamos el PDFView con la ruta del PDF que recibimos
             child: PDFView(
-              filePath: pdfPath, // Usamos la ruta del PDF recibida
-              fitPolicy: FitPolicy.WIDTH, // Controla la política de ajuste
+              filePath: pdfPath,
+              fitPolicy: FitPolicy.WIDTH,
               onError: (error) {
-                // Maneja errores de carga del PDF
                 print("Error al cargar el PDF: $error");
               },
               onRender: (pages) {
-                // Se llama cuando el PDF se ha renderizado correctamente
                 print("PDF renderizado con $pages páginas.");
               },
             ),
+          ),
+          PdfButton(
+            onPress: () {},
+            buttonText: 'Compartir',
           ),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:visor_pdf/screens/new_screen.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:visor_pdf/widgets/pdf_button.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         title: Text(
           'PDFViewer',
           style: TextStyle(
-            color: Colors.white, // Cambia el color del texto del título
+            color: Colors.white,
           ),
         ),
       ),
@@ -29,37 +30,22 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: () async {
-                final filePath = await FilePicker.platform.pickFiles(
-                  type: FileType.custom,
-                  allowedExtensions: ['pdf'],
-                );
+            PdfButton(onPress: () async {
+              final filePath = await FilePicker.platform.pickFiles(
+                type: FileType.custom,
+                allowedExtensions: ['pdf'],
+              );
 
-                if (filePath != null && filePath.files.isNotEmpty) {
-                  final selectedPdfPath = filePath.files.first.path;
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => NewScreen(pdfPath: selectedPdfPath),
-                    ),
-                  );
-                } else {}
-              },
-              child: Text('Abrir PDF'),
-              style: ButtonStyle(
-                minimumSize: MaterialStateProperty.all(
-                  Size(300, 75),
-                ),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
+              if (filePath != null && filePath.files.isNotEmpty) {
+                final selectedPdfPath = filePath.files.first.path;
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NewScreen(pdfPath: selectedPdfPath),
                   ),
-                ),
-                backgroundColor: MaterialStateProperty.all(
-                    Theme.of(context).colorScheme.secondary),
-              ),
-            )
+                );
+              } else {}
+            }),
           ],
         ),
       ),

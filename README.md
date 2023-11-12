@@ -87,7 +87,7 @@ La arquitectura de software utilizada sigue una estructura de capas más simple:
 
 3. **Capa de Servicios: **
    - **Ubicación:** En la carpeta `lib/services/`.
-   -**Propósito:** Contiene servicios específicos, como `pdf_service.dart`, que maneja la lógica de manipulación de archivos PDF.
+   - **Propósito:** Contiene servicios específicos, como `pdf_service.dart`, que maneja la lógica de manipulación de archivos PDF.
 
 ### Diagrama de Capas:
 

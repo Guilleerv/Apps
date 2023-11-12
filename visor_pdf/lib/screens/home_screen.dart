@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:visor_pdf/screens/new_screen.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:visor_pdf/widgets/pdf_button.dart';
+import 'package:visor_pdf/services/pdf_service.dart';
 
 class HomeScreen extends StatelessWidget {
+  final PdfService pdfService = PdfService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,22 +32,22 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 40),
-            PdfButton(onPress: () async {
-              final filePath = await FilePicker.platform.pickFiles(
-                type: FileType.custom,
-                allowedExtensions: ['pdf'],
-              );
+            PdfButton(
+              onPress: () async {
+                final selectedPdfPath = await pdfService.pickAndLoadPdf();
 
-              if (filePath != null && filePath.files.isNotEmpty) {
-                final selectedPdfPath = filePath.files.first.path;
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => NewScreen(pdfPath: selectedPdfPath),
-                  ),
-                );
-              } else {}
-            }),
+                if (selectedPdfPath != null) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NewScreen(pdfPath: selectedPdfPath),
+                    ),
+                  );
+                } else {
+                  // Manejar el caso en el que no se seleccionó un PDF
+                }
+              },
+            ),
           ],
         ),
       ),

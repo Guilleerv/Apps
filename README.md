@@ -79,15 +79,15 @@ La arquitectura de software utilizada sigue una estructura de capas más simple:
 
 1. **Capa de Presentación (UI):**
    - **Ubicación:** En la carpeta `lib/screens/`.
-   - **Propósito:** Contiene las pantallas y widgets responsables de la interfaz de usuario.
+   - **Propósito:** Contiene las pantallas responsables de la interfaz de usuario, en este caso serían dos, la vista principal del usuario y la pantalla dónde se visualiza el PDF.
 
 2. **Widgets Reutilizables:**
    - **Ubicación:** En la carpeta `lib/widgets/`.
-   - **Propósito:** Contiene widgets reutilizables en varias pantallas, en este caso es un botón.
+   - **Propósito:** Contiene widgets reutilizables en varias pantallas, en este caso es un botón que se reutiliza en ambas pantallas.
 
 3. **Capa de Servicios: **
    - **Ubicación:** En la carpeta `lib/services/`.
-   -**Propósito:** Contiene servicioes específicos, como `pdf_service.dart`, que maneja la lógica de manipulación de archivos PDF.
+   -**Propósito:** Contiene servicios específicos, como `pdf_service.dart`, que maneja la lógica de manipulación de archivos PDF.
 
 ### Diagrama de Capas:
 

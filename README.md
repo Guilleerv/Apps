@@ -1,8 +1,8 @@
 # PDF_VIEW
 ## EQUIPO
-1. Guillermo Ramos encargado de 
-2. Richard Vásquez encargado de
-3. Marcelo Lillo encargado de
+1. Guillermo Ramos Arquitecto de Software
+2. Richard Vásquez Desarrollador Principal
+3. Marcelo Lillo Encargado de Diseño
 
 ## Caso de uso
 ---------------

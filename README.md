@@ -59,7 +59,7 @@ visor_pdf/
 |   |   |-- home_screen.dart
 |   |   |-- new_screen.dart
 |   |-- widgets/
-|   |   |-- pdf_button.dart   (falta implementarlo)
+|   |   |-- pdf_button.dart   
 |-- assets/
 |   |-- images/
 |   |   |-- pdfview.png
@@ -83,7 +83,7 @@ La arquitectura de software utilizada sigue una estructura de capas más simple:
 
 2. **Widgets Reutilizables:**
    - **Ubicación:** En la carpeta `lib/widgets/`.
-   - **Propósito:** Contiene widgets reutilizables en varias pantallas.
+   - **Propósito:** Contiene widgets reutilizables en varias pantallas, en este caso es un botón.
 
 3. **Capa de Servicios: **
    - **Ubicación:** En la carpeta `lib/services/`.

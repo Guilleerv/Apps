@@ -64,6 +64,7 @@ visor_pdf/
 |   |-- images/
 |   |   |-- pdfview.png
 |-- ...
+```
 
 - **`lib/screens/`:** Contiene las pantallas principales de la aplicación.
 - **`lib/widgets/`:** Contiene widgets reutilizables en las pantallas.

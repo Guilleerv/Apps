@@ -36,7 +36,8 @@
   - Al proporcionar documentos en formato digital, la aplicación contribuye a la reducción del uso de papel, siendo respetuosa con el medio ambiente.
 
 ## Diseño
----------------
+
+![image](https://github.com/Guilleerv/Apps/assets/115674130/1246c02a-b627-4679-8656-8e4458999320)
 
 ## Implementación
 

@@ -39,7 +39,15 @@
 ---------------
 
 ## Implementación
-------------
+
+Para la implementación, utilizo `flutter_pdfview` y `file_picker`, las cuales ayudan con el acceso y la visualización del archivo PDF. Se establecieron 2 pantallas, `home_screen` y `new_screen`.
+
+- **`home_screen`**: Muestra la pantalla principal del archivo y mediante `file_picker` solicita la ruta del archivo PDF contenido en el celular. Luego, entrega esta ruta a `new_screen`.
+
+- **`new_screen`**: Hace uso de la ruta proporcionada y, mediante la utilización de `flutter_pdfview`, maneja la visualización en la nueva pestaña. Se considera el manejo de errores y se renderiza el PDF dentro de la pantalla.
+
+Esta implementación permite al usuario seleccionar un archivo PDF desde su dispositivo en la pantalla principal (`home_screen`) y luego visualizarlo en detalle en la nueva pantalla (`new_screen`) utilizando `flutter_pdfview`. Todo el proceso incluye el manejo cuidadoso de posibles errores para mejorar la robustez de la aplicación.
+
 
 ## Arquitectura
 ### Estructura de Archivos Propuesta:

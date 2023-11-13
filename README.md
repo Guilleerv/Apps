@@ -8,21 +8,21 @@
 ---------------
 **Caso de Uso: Apertura y Visualización de Documentos PDF desde la Aplicación Móvil**
 
-*Descripción:* En el contexto de la aplicación a desarrollar, se trata de visualizar los documentos subidos a una plataforma educativa, donde tanto estudiantes como profesores podrán abrir documentos en formato PDF, como notas de clase, asignaciones, material de lectura y documentos de referencia.
+*Descripción:* En el contexto de la aplicación a desarrollar, se trata de visualizar los documentos para una universidad, donde tanto estudiantes como profesores podrán abrir documentos en formato PDF, como notas de clase, asignaciones, material de lectura y documentos de referencia.
 
 *Flujo del Caso de Uso:*
 
-1. **Selección de Materia o Curso:**
-   - El usuario elige la materia o curso relevante para acceder a los documentos asociados.
-
-2. **Selección de Documento:**
+1. **Selección de Documento:**
    - El usuario selecciona un documento en formato PDF que desea revisar.
 
-3. **Apertura y Visualización del PDF:**
+2. **Apertura y Visualización del PDF:**
    - La aplicación abre el visor de PDF incorporado, permitiendo al usuario visualizar el contenido del documento directamente dentro de la aplicación.
 
-4. **Navegación:**
+3. **Navegación:**
    - El usuario puede navegar por las páginas del PDF, hacer zoom para leer detalles.
+
+4. **Compartir**
+   - EL usuario puede compartir el documento directamente desde la aplicación.
 
 *Beneficios:*
 

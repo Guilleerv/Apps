@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:visor_pdf/widgets/pdf_button.dart'; // Importa el nuevo widget
+import 'package:visor_pdf/widgets/pdf_button.dart'; 
 
 class NewScreen extends StatelessWidget {
   final String? pdfPath;

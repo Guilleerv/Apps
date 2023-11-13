@@ -43,9 +43,7 @@ class HomeScreen extends StatelessWidget {
                       builder: (context) => NewScreen(pdfPath: selectedPdfPath),
                     ),
                   );
-                } else {
-                  // Manejar el caso en el que no se seleccionó un PDF
-                }
+                } else {}
               },
             ),
           ],
@@ -56,17 +54,15 @@ class HomeScreen extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             ListTile(
-              title: Text('Pantalla 1'),
+              title: Text('Contáctanos'),
               onTap: () {
                 Navigator.pop(context);
-                // Navegar a la pantalla 1
               },
             ),
             ListTile(
-              title: Text('Pantalla 2'),
+              title: Text('Califícanos'),
               onTap: () {
                 Navigator.pop(context);
-                // Navegar a la pantalla 2
               },
             ),
           ],
